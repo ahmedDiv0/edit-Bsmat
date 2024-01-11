@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  transition: all 0.5s ease-in;
+}
+
+html.dark,
+.darkk {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark,
+.darkk {
+  background-color: #111;
+  color: var(--primary-color);
+}
+.toggle {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+#disapper {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  height: 80vh;
+  width: 80vw;
+  margin: 20px;
+}
+.icons a img {
+  position: relative;
+  top: 50px;
+  padding: 20px;
+  width: 280px;
+  transition: 0.4s ease-in;
+}
+.icons {
+  overflow: hidden;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in;
+}
+.social-icons {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in;
+}
+.social-icons li {
+  margin: 8px;
+  padding: 5px;
+}
+
+.social-icons a {
+  position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: red;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 100%;
+  color: white;
+  transition: 0.5s ease-out;
+}
+.social-icons a:hover {
+  color: red;
+  background-color: transparent;
+  font-size: 35px;
+  height: 0;
+  width: 0;
+}
+
+.text {
+  display: inline-block;
+  padding: 10px;
+  font-size: 25px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  color: red;
+  transition: 0.4s ease-in;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+}
+.dicover,
+.services,
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  margin: 20px 40px;
+  width: 15vw;
+  transition: 0.4s ease-in;
+}
+.di-list,
+.sr-list,
+.co-list {
+  padding: 10px;
+  list-style-type: none;
+}
+.di-list li,
+.sr-list li,
+.co-list li {
+  margin: 10px 5px;
+}
+.di-list li a,
+.sr-list li a,
+.co-list li a {
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--primary-color);
+  transition: 0.4s ease-in;
+}
+
+@media (max-width: 1000px) {
+  .container .icons a img {
+    position: relative;
+    top: 0;
+    padding: 10px;
+    width: 200px;
+  }
+  .container .icons {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 5%;
+    transform: translate(-5%, -5%);
+    width: 80vw;
+  }
+  .container .social-icons {
+    width: 80vw;
+    margin-top: -10px;
+  }
+
+  .container .text {
+    padding: 8px;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .container .dicover,
+  .container .services,
+  .container .contact {
+    margin: 10px 20px;
+    width: 18vw;
+    margin-top: 250px;
+  }
+
+  .container .di-list li a,
+  .container .sr-list li a,
+  .container .co-list li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--primary-color);
+  }
+}
+
+@media (max-width: 1000px) {
+}
